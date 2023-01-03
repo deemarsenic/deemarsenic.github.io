@@ -41,8 +41,10 @@ section {
     position: absolute;
     top: 0;
     min-height: 100vh;
+    bottom: 100;
     width: 100%;
     background: var(--bgcolor);
+
 }
 
 section:target {
@@ -52,7 +54,7 @@ section:target {
 
 section#home {
     /* Show #home by default */
-    display: block;
+    display: flex;
 }
 
 /* ------- Header ------- */
@@ -114,12 +116,17 @@ p,
 ul,
 ol,
 article {
-    max-width: 60ch;
     /* Limit line-length to 60 characters */
     margin-bottom: 1.2em;
     margin: "auto";
     padding: "auto";
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60ch;
+
 }
+
+
 
 ul {
     list-style-type: none;
@@ -129,11 +136,8 @@ ul li::marker {
     content: "\2022   ";
 }
 
-li {
-    margin-bottom: .2em;
-}
 
-ul,
+
 ol {
     padding-left: 2ch;
 }
@@ -188,15 +192,6 @@ img {
 }
 
 /* External links */
-
-a[href*="//"]:after {
-    font-weight: 300;
-    font-size: .85em;
-    content: "\2197";
-    /* top right arrow: ↗ */
-    color: var(--textcolor);
-    opacity: .25;
-}
 
 a[href*="//"]:hover:after {
     color: var(--highlight);
