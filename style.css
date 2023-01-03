@@ -81,6 +81,10 @@ nav a:not(:last-of-type) {
     margin-right: 1.5vw;
 }
 
+.top {
+    font-size: 1.3em;
+}
+
 /* ------- General ------- */
 
 a {
