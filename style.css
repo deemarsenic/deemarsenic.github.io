@@ -201,3 +201,30 @@ a[href*="//"]:hover:after {
     color: var(--highlight);
     opacity: 1;
 }
+
+#gallery {
+    line-height: 0em;
+    -webkit-column-count: 2;
+    /* split it into 2 columns */
+    -webkit-column-gap: 1em;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    column-count: 2;
+    column-gap: 1em;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    /* to match column gap */
+}
+
+@media (max-width: 1200px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
