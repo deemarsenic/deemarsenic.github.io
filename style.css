@@ -23,6 +23,10 @@
     outline: 1px solid red;
   } */
 
+
+
+
+
 body {
     font-size: 16px;
     font-family: system-ui, sans-serif;
@@ -34,6 +38,13 @@ body {
     margin: 0 auto;
     width: 50em;
 
+
+}
+
+.centered-nav {
+    display: flex;
+    justify-content: center;
+    /* Additional styles for the navigation bar if needed */
 }
 
 /* ------- Sections ------- */
